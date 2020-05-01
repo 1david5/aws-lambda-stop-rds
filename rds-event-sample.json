@@ -1,0 +1,22 @@
+{
+    "version": "0",
+    "id": "0556f951-06c3-edf9-b8a9-8bd865a75755",
+    "detail-type": "RDS DB Instance Event",
+    "source": "aws.rds",
+    "account": "432081807973",
+    "time": "2020-03-19T23:01:02Z",
+    "region": "us-east-1",
+    "resources": [
+        "arn:aws:rds:us-east-1:432081807973:db:top-rds"
+    ],
+    "detail": {
+        "EventCategories": [
+            "availability"
+        ],
+        "SourceType": "DB_INSTANCE",
+        "SourceArn": "arn:aws:rds:us-east-1:432081807973:db:top-rds",
+        "Date": "2020-03-19T23:01:02.557Z",
+        "Message": "DB instance restarted",
+        "SourceIdentifier": "top-rds"
+    }
+}
