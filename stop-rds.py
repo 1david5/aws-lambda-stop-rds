@@ -4,7 +4,7 @@ from botocore.exceptions import ClientError
 
 rds_client = boto3.client("rds")
 
-def lambda_handler():
+def lambda_handler(event,context):
   instances = rds_client.describe_db_instances()
   clusters = rds_client.describe_db_clusters()
 
@@ -55,4 +55,4 @@ def stop_rds(attributes, rds_type):
   if no_stopped_tag_bool:
     print("%s %s isn't in 'Available' state or not 'Decired-state' tag found\n" %(identifier, rds_type))
 
-lambda_handler()
+lambda_handler({},'')
