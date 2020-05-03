@@ -1,2 +1,2 @@
 # aws-lambda-stop-rds
-This lambda will stop RDS instances based on Decired-state tag
+This lambda will stop RDS instances and clusters based on Decired-state tag
