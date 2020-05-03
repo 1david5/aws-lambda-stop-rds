@@ -5,12 +5,16 @@
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
+                "rds:StartDBCluster",
+                "rds:StopDBCluster",
                 "logs:CreateLogStream",
-                "logs:CreateLogGroup",
-                "logs:PutLogEvents",
                 "rds:ListTagsForResource",
+                "rds:DescribeGlobalClusters",
                 "rds:DescribeDBInstances",
                 "rds:StopDBInstance",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents",
+                "rds:DescribeDBClusters",
                 "rds:StartDBInstance"
             ],
             "Resource": "*"
